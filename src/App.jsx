@@ -13,7 +13,7 @@ import QRCode from "react-qr-code";
 function App() {
   return (
     <div>
-      <QRCode value="www.sistemapedi.com" />
+      <QRCode value="http://localhost:3000" />
       <CartProvider>
         <BrowserRouter>
 
