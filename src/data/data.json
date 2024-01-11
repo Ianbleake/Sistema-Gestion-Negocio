@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "titulo": "Desayuno Básico",
+        "descripcion": "Café o fruta, molletes o sincronizadas.",
+        "categoria": "Desayunos",
+        "imagen": "http://dummyimage.com/200x100.png/cc0000/ffffff",
+        "precio": 25,
+        "stock": 10
+    },
+    {
+        "id": 2,
+        "titulo": "Desayuno Barra",
+        "descripcion": "Café o fruta, pancakes o sandwich.",
+        "categoria": "Desayunos",
+        "imagen": "http://dummyimage.com/200x100.png/cc0000/ffffff",
+        "precio": 35,
+        "stock": 10
+    },
+    {
+        "id": 3,
+        "titulo": "Huevos al gusto",
+        "descripcion": "Los huevos de su preferencia",
+        "categoria": "Desayunos",
+        "imagen": "http://dummyimage.com/200x100.png/cc0000/ffffff",
+        "precio": 30,
+        "stock": 10
+    },
+    {
+        "id": 4,
+        "titulo": "Chilaquiles ",
+        "descripcion": "Con dos huevos estrellados",
+        "categoria": "Desayunos",
+        "imagen": "http://dummyimage.com/200x100.png/cc0000/ffffff",
+        "precio": 32,
+        "stock": 10
+    }
+
+]
