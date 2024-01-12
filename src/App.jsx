@@ -8,13 +8,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import Carrito from "./components/Carrito";
 import Checkout from "./components/Checkout";
-import QRCode from "react-qr-code";
 import { Footer } from "./components/Footer";
+import { CodigoQR } from "./components/CodigoQR";
+import { LogIn } from "./components/LogIn";
+
 
 function App() {
   return (
-    <div>
-      <QRCode value="http://192.168.1.76:3000" />
+    <div className='w-full min-h-[100VH] bg-green-100 flex flex-col relative'>
       <CartProvider>
         <BrowserRouter>
 
@@ -29,6 +30,8 @@ function App() {
             <Route path="/contacto" element={<Contacto />}/>
             <Route path="/carrito" element={<Carrito />}/>
             <Route path="/checkout" element={<Checkout />}/>
+            <Route path="/QR" element={<CodigoQR/>}/>
+            <Route path="/Login" element={<LogIn/>} />
           </Routes>
 
           <Footer/>

@@ -17,7 +17,7 @@ const Nosotros = () => {
   }, [])
 
   return (
-    <div className="container">
+    <div className="container w-full min-h-[100VH] pt-16 pb-12">
         <h1 className="main-title">Nosotros</h1>
         <p>Este es el componente "Nosotros"</p>
     </div>

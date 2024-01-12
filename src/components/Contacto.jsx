@@ -10,7 +10,7 @@ const Contacto = () => {
 
   return (
 
-    <div className="container">
+    <div className="container w-full min-h-[100VH] pt-16 pb-12">
         <h1 className="main-title">Contacto</h1>
         <form className="formulario" onSubmit={handleSubmit(enviar)}>
 
