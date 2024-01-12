@@ -9,11 +9,12 @@ import { CartProvider } from "./context/CartContext";
 import Carrito from "./components/Carrito";
 import Checkout from "./components/Checkout";
 import QRCode from "react-qr-code";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <QRCode value="http://localhost:3000" />
+      <QRCode value="http://192.168.1.76:3000" />
       <CartProvider>
         <BrowserRouter>
 
@@ -29,6 +30,8 @@ function App() {
             <Route path="/carrito" element={<Carrito />}/>
             <Route path="/checkout" element={<Checkout />}/>
           </Routes>
+
+          <Footer/>
           
         </BrowserRouter>
       </CartProvider>
