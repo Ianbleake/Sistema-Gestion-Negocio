@@ -33,16 +33,16 @@ const Checkout = () => {
 
     if (pedidoId) {
         return (
-            <div className="container">
-                <h1 className="main-title">Muchas gracias por su compra</h1>
+            <div className="container w-full min-h-[100VH] pt-16 pb-12">
+                <h1 className="pricing-plan my-2">Muchas gracias por su compra</h1>
                 <p>Tu número de pedido es: {pedidoId}</p>
             </div>
         )
     }
 
   return (
-    <div className="container">
-        <h1 className="main-title">Finalizar compra</h1>
+    <div className="container w-full min-h-[100VH] pt-16 pb-12">
+        <h1 className="pricing-plan my-2">Finalizar compra</h1>
         <form className="formulario" onSubmit={handleSubmit(comprar)}>
 
             <input type="text" placeholder="Ingrese su nombre" {...register("nombre")} />
