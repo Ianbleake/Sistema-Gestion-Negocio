@@ -25,11 +25,14 @@ const Navbar = () => {
             <li><Link className="menu-link mr-6" to="/QR">QR</Link></li>
           </ul>
         </div>
+        
+        <div className='sm:hidden'>
         <button onClick={desplegar} className='bg-emerald-700 h-24'>
-          <TbMenu2 className='h-32 w-10 sm:hidden' />
+          <TbMenu2 className='h-32 w-10' />
         </button>
         <div id='MenuDesplegable' className={menuDesplegado ? 'block' : 'hidden'}>
           <MenuDes />
+        </div>
         </div>
       </ul>
     </nav>
