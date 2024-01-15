@@ -302,6 +302,8 @@ then set the desired styles for .card-img. */
     transition: all 0.5s;
     display: flex;
     justify-content: center;
+    height: 40%;
+    width: 100%;
   }
   
   

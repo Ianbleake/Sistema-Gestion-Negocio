@@ -6,33 +6,33 @@ import { db } from "../firebase/config";
 
 const ItemListContainer = () => {
 
-    const [productos, setProductos] = useState([]);
+  const [productos, setProductos] = useState([]);
 
-    const [titulo] = useState("Productos");
+  const [titulo] = useState("Nuestros Productos");
 
-    const categoria = useParams().categoria;
+  const categoria = useParams().categoria;
 
-    useEffect(() => {
+  useEffect(() => {
 
-      const productosRef = collection(db, "Productos");
-      const q = categoria ? query(productosRef, where("categoria", "==", categoria)) : productosRef;
+    const productosRef = collection(db, "Productos");
+    const q = categoria ? query(productosRef, where("categoria", "==", categoria)) : productosRef;
 
-      getDocs(q)
-        .then((resp) => {
+    getDocs(q)
+      .then((resp) => {
 
-          setProductos(
-            resp.docs.map((doc) => {
-              return { ...doc.data(), id: doc.id }
-            })
-          )
-        })
-        
-    }, [categoria])
-    
-    
+        setProductos(
+          resp.docs.map((doc) => {
+            return { ...doc.data(), id: doc.id }
+          })
+        )
+      })
+
+  }, [categoria])
+
+
   return (
-    <div className="w-full min-h-[100VH] pt-16 pb-12">
-        <ItemList productos={productos} titulo={titulo} />
+    <div className="w-full min-h-[100VH] pt-16 pb-16">
+      <ItemList productos={productos} titulo={categoria ? `${titulo}: ${categoria}` : titulo} />
     </div>
   )
 }

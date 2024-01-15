@@ -6,9 +6,9 @@ const ItemList = ( {productos, titulo} ) => {
 
   return (
     <div className="container">
-        <h2 className="main-title">{toCapital(titulo)}</h2>
+        <h2 className="pricing-plan my-2">{toCapital(titulo)}</h2>
 
-        <div className="Productos">
+        <div className="w-full flex flex-wrap justify-center  sm:grid grid-cols-4 gap-4">
             { productos.map((prod) => <Item producto={prod} key={prod.id} />) }
         </div>
     </div>
