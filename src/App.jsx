@@ -11,6 +11,7 @@ import Checkout from "./components/Checkout";
 import { Footer } from "./components/Footer";
 import { CodigoQR } from "./components/CodigoQR";
 import { LogIn } from "./components/LogIn";
+import { Admin } from "./components/Admin";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Route path="/checkout" element={<Checkout />}/>
             <Route path="/QR" element={<CodigoQR/>}/>
             <Route path="/Login" element={<LogIn/>} />
+            <Route path="/Admin" element={<Admin/>} />
           </Routes>
 
           <Footer/>
