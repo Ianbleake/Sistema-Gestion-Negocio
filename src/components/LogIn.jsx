@@ -3,8 +3,9 @@ import React from 'react'
 
 export const LogIn = () => {
     return (
-        <div className='container w-full min-h-[100VH] pt-44 pb-12 sm:pt-56 sm:px-[450px]'>
-            <div className="card max-w-md  relative flex flex-col p-4 rounded-md text-black bg-emerald-300">
+        <div className='container w-full min-h-[100VH] pt-44 pb-12 sm:pt-56 sm:px-[130px]'>
+
+            <div className="card relative flex flex-col p-4 rounded-md text-black bg-emerald-300 sm:w-[900px]">
                 <div className="text-2xl font-bold mb-2 text-[#1e0e4b] text-center">Bienvenido a <span className="text-emerald-600">ControlApp</span></div>
                 <div className="text-sm font-normal mb-4 text-center text-[#1e0e4b]">Accede a tu cuenta de Administrador:</div>
                 <form className="flex flex-col gap-3">
@@ -19,6 +20,7 @@ export const LogIn = () => {
                     <button type="submit" className="bg-emerald-500 w-max m-auto px-6 py-2 rounded text-white text-sm font-normal">Submit</button>
                 </form>
             </div>
+
         </div>
     )
 }
