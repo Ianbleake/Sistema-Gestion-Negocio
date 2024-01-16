@@ -12,6 +12,7 @@ import { Footer } from "./components/Footer";
 import { CodigoQR } from "./components/CodigoQR";
 import { LogIn } from "./components/LogIn";
 import { Admin } from "./components/Admin";
+import AgregarProducto from "./components/Agregar";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/QR" element={<CodigoQR/>}/>
             <Route path="/Login" element={<LogIn/>} />
             <Route path="/Admin" element={<Admin/>} />
+            <Route path="/Agregar" element={<AgregarProducto/>}/>
           </Routes>
 
           <Footer/>

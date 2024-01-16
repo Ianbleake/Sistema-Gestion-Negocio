@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { db } from "../firebase/config";
+import { Link } from "react-router-dom";
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
@@ -81,7 +82,7 @@ const ProductList = () => {
                 </div>
             </div>
             <div className="flex items-center justify-center mt-5">
-                <button className="bg-white">Añadir producto</button>
+                <button className="bg-white"><Link to='/Agregar'>Agregar Producto</Link></button>
             </div>
         </div>
     );
