@@ -23,13 +23,12 @@ export const Pedidos = () => {
 
     return (
         <div className="bg-sky-100">
-            <h2 className="">Listado de Pedidos</h2>
             <div class="divTable greyGridTable">
                 <div class="divTableHeading">
                     <div class="divTableRow">
                         <div class="divTableHead">Cliente</div>
                         <div class="divTableHead">Mesa</div>
-                        
+                        <div class="divTableHead">Pedido</div>
                         <div class="divTableHead">Total</div>
                         <div class="divTableHead">-</div>
                     </div>
@@ -38,8 +37,21 @@ export const Pedidos = () => {
 
                     {products.map((product) => (
                         <div class="divTableRow">
-                            <div className="divTableCell" key={product.id}>{product.total}</div>
-                            <div className="divTableCell" key={product.id}>{product.categoria}</div>
+                            <div className="divTableCell" key={product.id}>{product.cliente.nombre}</div>
+                            <div className="divTableCell" key={product.id}>{product.cliente.mesa}</div>
+                            <div className="divTableCell" key={product.id}>
+                                {
+                                product.productos.map((producto)=>(
+                                    <ul>
+                                        <li>
+                                            <span className="mr-4">{producto.cantidad}</span>
+                                            {producto.titulo}
+                                        </li>
+                                    </ul>
+                                    
+                                ))}
+                            </div>
+                            
                             <div className="divTableCell" key={product.id}>{product.total}</div>
                             <div class="divTableCell">
                                 <button
