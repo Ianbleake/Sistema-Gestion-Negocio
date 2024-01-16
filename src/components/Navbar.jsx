@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
         
         <div className='sm:hidden'>
-        <button onClick={desplegar} className='bg-emerald-700 h-24'>
+        <button onClick={desplegar} className='bg-emerald-700 h-[16VH] border-none'>
           <TbMenu2 className='h-32 w-10' />
         </button>
         <div id='MenuDesplegable' className={menuDesplegado ? 'block' : 'hidden'}>

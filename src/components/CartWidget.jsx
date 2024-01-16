@@ -8,9 +8,9 @@ const CartWidget = () => {
   const { cantidadEnCarrito } = useContext(CartContext);
 
   return (
-    <div className='mr-4 w-20  '>
-      <Link className="flex items-center gap-2" to="/carrito">
-        <IoMdBasket className='h-32 w-10'/>
+    <div className='mr-4 w-20'>
+      <Link className="flex justify-end items-center gap-2" to="/carrito">
+        <IoMdBasket className='h-10 w-10'/>
         <span className="numerito">{cantidadEnCarrito()}</span>
       </Link>
     </div>

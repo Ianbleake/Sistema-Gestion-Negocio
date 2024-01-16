@@ -444,3 +444,68 @@ then set the desired styles for .card-img. */
   .success__close path {
     fill: #2B641E;
   }
+
+  button {
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+  button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+  
+  div.greyGridTable {
+    border: 2px solid #FFFFFF;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  .divTable.greyGridTable .divTableCell, .divTable.greyGridTable .divTableHead {
+    border: 1px solid #FFFFFF;
+    padding: 3px 4px;
+  }
+  .divTable.greyGridTable .divTableBody .divTableCell {
+    font-size: 13px;
+  }
+  .divTable.greyGridTable .divTableRow:nth-child(even) {
+    background: #D0E4F5;
+  }
+  .divTable.greyGridTable .divTableHeading {
+    background: #FFFFFF;
+    border-bottom: 4px solid #333333;
+  }
+  .divTable.greyGridTable .divTableHeading .divTableHead {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    border-left: 2px solid #333333;
+  }
+  .divTable.greyGridTable .divTableHeading .divTableHead:first-child {
+    border-left: none;
+  }
+  
+  .greyGridTable .tableFootStyle {
+    font-size: 14px;
+  }
+  /* DivTable.com */
+  .divTable{ display: table; }
+  .divTableRow { display: table-row; }
+  .divTableHeading { display: table-header-group;}
+  .divTableCell, .divTableHead { display: table-cell;}
+  .divTableHeading { display: table-header-group;}
+  .divTableFoot { display: table-footer-group;}
+  .divTableBody { display: table-row-group;}
